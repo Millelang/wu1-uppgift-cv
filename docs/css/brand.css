@@ -1,0 +1,25 @@
+body {
+    background-color: hsl(0, 0%, 100%);
+    color: #ff0000;
+    font-family: 'Roboto Slab', serif;
+    padding: 0;
+    margin: 0;
+}
+.hero > h1 > img{
+    filter: opacity(0,6);
+}
+
+a {
+    color: #ffffff;
+}
+a:hover {
+    color: #ffffff;
+}
+nav > a {
+    font-weight: 500;
+    text-decoration: none;
+}
+nav {
+    color: #ffffff;
+    background-color: #ff0000;
+}
