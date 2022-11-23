@@ -1,42 +1,92 @@
-.container {
-    width: min(80ch, 100vw - 2rem);
-    margin-inline: auto;
+.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-img {
-max-width: 100%;
-height: auto;
+.sidebar {
+    /* ↓ The width when the sidebar _is_ a sidebar */
+    flex-basis: 20rem;
+    flex-grow: 0;
+    margin-block-start: 1ch;
+    padding: 2rem;
+    
+
 }
 
+.sidebar>img {
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+.not-sidebar {
+    /* ↓ Grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    /* ↓ Wrap when the elements are of equal width */
+    min-inline-size: 50%;
+    ;
+}
+
+
+.rund {
+    border-radius: 100%;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 350px;
+    left: 0;
+    border: 1px red;
+    border-radius: 100%;
+  }
+  .image2 {
+    position: absolute;
+    top: 100 px;
+    left: 30px;
+    border: 1px red;
+    border-radius: 100%;
+  }
 .hero {
     display: grid;
     grid-template-areas: "stack";
+    margin-bottom: 2rem;
 }
-.hero > * {
+
+.hero>* {
     grid-area: stack;
 }
-.hero > h1 {
+
+.hero>h1 {
     place-self: center;
     font-size: 4rem;
-    color: #ffffff    ;
+    color: #ffffff;
     outline-style: solid;
     outline-color: #e01e1e;
-    outline-width: 0,5ch;
+    outline-width: 0, 5ch;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
 }
 
-nav > ul {
+nav>ul {
     list-style: none;
     display: flex;
     gap: 1rem;
     padding: 0;
 }
+
 body {
     background-color: rgb(255, 255, 255);
 }
+
 footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
