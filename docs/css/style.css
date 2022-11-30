@@ -4,14 +4,14 @@
     gap: 2rem;
 }
 
+body {
+    cursor: url(/docs/images/cursor.cur), auto;
+}
 .sidebar {
-    /* ↓ The width when the sidebar _is_ a sidebar */
     flex-basis: 20rem;
     flex-grow: 0;
     margin-block-start: 1ch;
     padding: 2rem;
-    
-
 }
 
 .sidebar>img {
@@ -20,12 +20,11 @@
 }
 
 .not-sidebar {
-    /* ↓ Grow from nothing */
     flex-basis: 0;
     flex-grow: 999;
-    /* ↓ Wrap when the elements are of equal width */
     min-inline-size: 50%;
-    ;
+    cursor: url(/docs/images/visa\ trädet.jpg), url(/docs/images/visa\ trädet.jpg), default;
+
 }
 
 
@@ -44,6 +43,8 @@
     left: 0;
     border: 1px red;
     border-radius: 100%;
+    padding-left: 1rem;
+    padding-top: 6rem;
   }
   .image2 {
     position: absolute;
@@ -51,6 +52,7 @@
     left: 30px;
     border: 1px red;
     border-radius: 100%;
+    padding-top: 4rem;
   }
 .hero {
     display: grid;
@@ -74,6 +76,7 @@
 nav {
     display: flex;
     justify-content: space-between;
+    
 }
 
 nav>ul {
@@ -81,6 +84,8 @@ nav>ul {
     display: flex;
     gap: 1rem;
     padding: 0;
+    padding-left: 2ch;
+    padding-top: 1ch;
 }
 
 body {
@@ -90,4 +95,5 @@ body {
 footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
-}
+}   
+
